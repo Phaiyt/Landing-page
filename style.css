@@ -15,7 +15,7 @@ nav ul{
 }
 nav a{
     color: white;
-    text-decoration: 0;
+    text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -38,12 +38,12 @@ nav h1{
     text-align: center;
 }
 .hero h2{
-    font-size: 2.5rem;
+    font-size: 24px;
     color: #333;
     margin-bottom: 10px;
 }
 .hero p{
-    font-size: 1.2rem;
+    font-size: 16px;
     color: #666;
     margin-bottom: 20px;
 }
@@ -70,10 +70,10 @@ nav h1{
     margin-bottom: 10px;
 }
 .feature-box p{
-    color: 555;
+    color: #555;
 }
 .contact{
-    background-color: #fff8el;
+    background-color: #fff8e1;
     padding: 40px 20px;
     text-align: center;
 }
@@ -109,3 +109,34 @@ body{
     line-height: 1.6;
     background-color: #fdfdfd;
 }
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .features{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .hero h2{
+        font-size: 20px;
+    }
+    .hero p{
+        font-size: 14px;
+    }
+    .contact input[type="email"],
+    .contact button {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .contact{
+        padding: 20px 10px;
+    }
+}
+    
